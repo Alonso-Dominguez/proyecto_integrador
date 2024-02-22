@@ -1,0 +1,133 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  
+}
+
+body {
+  background-image: url("fondo.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Helvetica", sans-serif;
+  color: whitesmoke;
+}
+body, html {
+  overflow: hidden;
+}
+
+ul li a {
+  color: black; /* Cambiar el color a azul (#3366cc) */
+  text-decoration: none; /* Sin subrayado */
+  font-weight: bolder; /* Texto en negrita */
+}
+
+/* Cambio de color al pasar el cursor sobre los enlaces */
+ul li a:hover {
+  color: rgba(17, 220, 231, 0.715); /* Cambiar el color a naranja (#ff6600) */
+}
+
+header {
+  background-image: url(imagenes/hero.svg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.menu {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.menu .logo {
+  font-weight: 700;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.menu .navbar ul li {
+  position: relative;
+  float: left;
+}
+
+.menu .navbar ul li a {
+  font-size: 18px;
+  padding: 20px;
+  color: #ffffff;
+  display: block;
+}
+
+.menu .navbar ul li a:hover {
+  color: #0eaef3;
+}
+
+#menu {
+  display: none;
+}
+
+.menu-icono {
+  width: 25px;
+}
+
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .menu {
+      padding: 20px;
+  }
+
+  .menu label {
+      display: initial;
+  }
+
+  .menu .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: #5850Bc;
+      display: none;
+  }
+
+  .menu .navbar ul li {
+      width: 100%;
+  }
+
+  #menu:checked ~ .navbar {
+      display: initial;
+  }
+
+  header {
+      height: auto;
+      padding: 40px 0px;
+      background-position: center center;
+  }
+  
+}
+
+
